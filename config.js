@@ -2,7 +2,7 @@
 // "MC" is referring to Minecraft in the comments for convenience.
 module.exports = {
   bot: {
-    token: 'your-bot-token-here',
+    token: 'MTE1NjYxNjI2NDcxMDYzOTcyNw.GUJwyR.uWoBys9fXBUNz7rzaKg-pkB7clQYXtFVXygD7Y',
     // Auto changing status and activity of bot.
     presence: {
       enabled: true,
@@ -19,7 +19,7 @@ module.exports = {
     },
   },
   mcserver: {
-    ip: 'demo.mcstatus.io', // IP of  MC server.
+    ip: 'skygen.pro', // IP of  MC server.
     port: 25565, // Port number of MC server. Use Query Port in Java for full Player List.
     type: 'java', // Type of MC server: "java" or "bedrock".
     name: 'Demo Server', // Name of MC server.
@@ -60,20 +60,20 @@ module.exports = {
 
   // Automatically Updates the current status of a Mc server in a channel, in real time.
   autoChangeStatus: {
-    enabled: false,
-    updateInterval: 60, // Time period between auto changing status in seconds, e.g. 60 = 1min. Recommended: above 60.
+    enabled: true,
+    updateInterval: 10, // Time period between auto changing status in seconds, e.g. 60 = 1min. Recommended: above 60.
     // These settings will be applied in slash (/) and prefix commands for status.
     isOnlineCheck: true, // Useful for servers which uses free hosting providers like Aternos. If the server's max players is 0 then status will set offline.
   },
 
   // Shows the Player Count of MC server in channel's name
   playerCountCH: {
-    enabled: false,
-    guildID: 'your-guild-id-here', // Server's ID for creating/editing channel stats.
-    channelId: '', // The channel ID for editing the player count. If no ID is provided, the bot will create the channel itself. NOT REQUIRED
+    enabled: true,
+    guildID: '1096099359415861472', // Server's ID for creating/editing channel stats.
+    channelId: '1164886269956993034', // The channel ID for editing the player count. If no ID is provided, the bot will create the channel itself. NOT REQUIRED
     // {playeronline} and {playermax} show number of online and max players.
-    onlineText: '🟢 {playeronline}/{playermax} active players',
-    offlineText: '🔴 Offline', // The name set when MC server is offline.
+    onlineText: '🟢・Server online',
+    offlineText: '🔴・Server offline', // The name set when MC server is offline.
   },
 
   autoReply: {
