@@ -2,7 +2,7 @@
 // "MC" is referring to Minecraft in the comments for convenience.
 module.exports = {
   bot: {
-    token: 'MTE1NjYxNjI2NDcxMDYzOTcyNw.GyiV4D.4rGuc_yj7Cw_aa1otldh7CvQ6JwpLeMYkap3Gs',
+    client.login(process.env.TOKEN); //login bot using token
     // Auto changing status and activity of bot.
     presence: {
       enabled: true,
